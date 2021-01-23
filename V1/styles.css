@@ -1,0 +1,57 @@
+@charset "utf-8";
+/*M2LO12 Demonstrate how CSS can change presentation of page elements*/
+/*M2LO3 Demonstrate style precedence and inheritance in CSS*/
+/*M2LO15 Apply colors using CSS*/
+/*M2LO14 Demonstrate progressive enhancement -- see below*/
+body {
+    background-color: #c1c8c7;
+    background-color: HSL(171, 6%, 77%) ;
+    background-color: RGBA(193, 200, 199, 1);
+  
+}
+/*M2LO4 Demonstrate external */
+/*M2LO6  Demonstrate a CSS id and a CSS class selector*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+/*M2LO5 Demonstrate contextual selectors*/
+  h1 { 
+    font-family: Courier New;
+    font-size: 30px;
+    text-align: center;
+
+  }
+/*M2LO13 Demonstrate how CSS can change presentation of textual elements */
+  p {
+    font-family: Courier New;
+    font-size: 15px;
+}
+footer {
+    text-align: center;
+}
+/*M2LO7 Demonstrate a CSS attribute selector other than class or id*/
+ul { 
+    display: inline-block; 
+    text-align: left; 
+}
+ol {
+    display: inline-block; 
+    text-align: left; 
+}
+/*M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector*/
+p::first-letter{
+  font-size: x-large;
+
+}
+/*M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector*/
+h1::before {
+  content: &#9775;
+}
+/*Progressive Enhancement in css is used so that newer browsers and older browsers
+will display the same colors, text, or picture sizing. Its a way of covering,
+your bases so that everyone can see and read your page. As above older browser wont
+recognize the HSL color, so it uses the RGB value instead. */
+/**/
