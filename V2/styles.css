@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+body {
+    background-color: #c1c8c7;
+    background-color: HSL(171, 6%, 77%) ;
+    background-color: RGBA(193, 200, 199, 1);
+  
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+  }
+  #hops{
+    border:rgb(0, 0, 0);
+  border-style:solid;
+  border-radius:25px
+  }
+  .lead-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height:auto;
+    }
+  
+  
+  /* M3LO2 Demonstrate floating elements (This moved the image out of 
+  the text and to the left, so the text still renders properly) */
+  .steins{
+    float: left;
+    padding-left: 250px;
+    width: 6%;
+    border: 10px solid transparent;
+    }
+    .clearfix {
+      overflow: auto;
+    }
+
+  h1 { 
+    font-family: Courier New;
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 3px 2px #111d5e;
+    
+}
+  }
+p {
+    font-family: Courier New;
+    font-size: 15px;
+  }
+ 
+ul { 
+    display: inline-block; 
+    text-align: left; 
+   
+    
+  }
+  /* M3LO8B Demonstrate relative positioning */
+ol {
+    display: inline-block; 
+    text-align: left;
+    position: relative;
+    
+    
+  }
+
+p::first-letter
+  {
+  font-size: x-large;
+  }
+
+h1::before {
+  content: &#9775;
+}
+/* M3LO9 Demonstrate fixed, (this places the footer at the bottom of the page no matter
+where you scroll to allow you to navigate back to certain pages) */
+/* M4LO4 - This demonstrates the use of gradients. (Changes the color from a cyan to a lighter
+sky blue)*/
+/* M4LO3 Demonstrate the use of rounded corners for borders */
+footer {
+  font-size:20px;
+  padding-left:auto;
+  padding-top:auto;
+  text-align: center;
+  text-decoration-color: #c1c8c7;
+  background: linear-gradient(rgb(15, 119, 216), rgb(108, 171, 173));
+  border:rgb(0, 0, 0);
+  border-style:solid;
+  border-radius:25px;
+  position:fixed;
+  left:425px;
+  bottom: 0;
+  }
+  /* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+/* */
+/**/
