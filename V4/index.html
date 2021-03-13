@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+ <!--
+        CIS155 19056 - W21 - Web Development I
+        M04: Project V3 - CSS for Layout and Graphic Design
+        Author: Blake Lacroix
+        Date: 02/03/21
+        Filename: index1.html
+        Pictures: freshHops.jpg = https://www.justbeerapp.com
+                  ingredients.jpg = https://www.smithsonianmag.com
+       -->
+
+
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Your Own Beer</title>
+    
+    <link rel="stylesheet" href="stylesReset.css">
+    <link rel="stylesheet" href="stylesFlex.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   
+    <nav>
+        
+        <a class="hamburger" href="#">
+            <img src="img/hamburger.svg" alt="hamburger icon">
+        </a>
+
+        <ul class="sub-menu">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="info.html">Info</a>
+            </li>
+            
+            <li>
+                <a href="about.html">About</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="contact rounded">
+            <p>
+                <a target="_blank" href="https://www.northernbrewer.com/">Northern Brewer Supply</a>
+            </p>
+        </div>
+        <div class="flex-row">
+            <div class="main-title">
+                <h1>&#9775 Brewing in the 253 &#9775</h1>
+            </div>
+        </div>
+        <div class="flex-col main">
+            <figure class="lead-img">
+                <img src="freshHops.jpg" alt="Header Image">
+                <figcaption>
+                    <p class="image-caption">
+                        <em>
+                            Image by <a href=https://www.justbeerapp.com>justbeerapp</a>.
+                        </em>
+                    </p>
+                </figcaption>
+            </figure>
+        <div class="flex-row flex-row-3">
+            <div class="flex-col numbers">
+                <div class="inner-section rounded">
+                    <h2 class="sub-header">Basics of BEER!!!!</h2>
+                    <ul class="current-numbers">
+                        <li>
+                            <b>Hops:</b> Whole Cone or Pellet
+                        </li>
+                        <li>
+                            <b>Water:</b> The PH and mineral count matter if you want to replicate the beer later
+                        </li>
+                        <li>
+                            <b>Malt:</b>Grain type you are using to get a paticular taste or sugar content.
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+            <!-- Site overview section -->
+           
+            </div>
+
+            <div class="flex-col">
+                    <article id="overview" class="rounded">
+                        <h2 class="sub-header">Brewing</h2>
+                        <p>
+                          Steps in brewing beer are as follows, first you want to gather all your brewing equipment up. My list includes, 
+                          <br />
+                          Brewing Kettle <br />
+                          Fermenter + Air Lock<br />
+                          Funnel (optional)<br />
+                          Sanitizer<br />
+                          Auto-Siphon<br />
+                          Stir Spoon<br />
+                          Beer Recipe Kit<br /> 
+                          Rubbermaid Tote, Largest size avialable (for sanitizing)
+                          <br /><br />
+                          Next we should sanitize everything thats going to touch the mash(beer before alcohol)
+
+                        </p>
+                    </article>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-col">
+
+            </div>
+            
+            <div class="flex-col-2 table-col">
+                    <div class="info">
+                        
+                        <table class="Beer-Stats">
+                            <tr>
+                                
+                                <th colspan="3">
+                                    Breweries Per Western State
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    State
+                                </th>
+                                <th>
+                                    Number Of Breweries
+                                </th>
+                                <th>
+                                    Barrels produced per year
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Washington
+                                </td>
+                                <td>
+                                    423
+                                </td>
+                                <td>
+                                    583,956
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Oregon
+                                </td>
+                                <td>
+                                    311
+                                </td>
+                                <td>
+                                    1,012,854
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Idaho
+                                </td>
+                                <td>
+                                    73
+                                </td>
+                                <td>
+                                    91,819
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    California
+                                </td>
+                                <td>
+                                    907
+                                </td>
+                                <td>
+                                    3,664,080
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Colorado
+                                </td>
+                                <td>
+                                    425
+                                </td>
+                                <td>
+                                    1,529,613
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="table-footer">
+                                    <small><em>
+                                            <a target="_blank"
+                                                href="https://www.brewersassociation.org/statistics-and-data/state-craft-beer-stats/">Brewers Association</a>
+                                        </em></small>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+            </div>
+            <div class="flex-col">
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Brewing in the 253 - Blake Lacroix- CIS 155 <br>
+    </footer>
+</body>
+
+</html>

@@ -3,125 +3,473 @@
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro');
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #c1c8c7;
-    background-color: HSL(171, 6%, 77%) ;
-    background-color: RGBA(193, 200, 199, 1);
-  
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    
-  }
-  
-  .lead-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height:auto;
-    }
-  
-  
-  /* M3LO2 Demonstrate floating elements (This moved the image out of 
-  the text and to the left, so the text still renders properly) */
-  .steins{
-    float: left;
-    padding-left: 250px;
-    width: 6%;
-    border: 10px solid transparent;
-    }
-    .clearfix {
-      overflow: auto;
-    }
-    #hops{
-      border:rgb(0, 0, 0);
-    border-style:solid;
-    border-radius:25px
-    }
-
-  h1 { 
-    font-family: Courier New;
-    font-size: 40px;
-    text-align: center;
-    text-shadow: 3px 2px #111d5e;
-    
-}
-  h2 { 
-  font-family: Courier New;
-  font-size: 30px;
-  text-align: center;
-  }
-
-p {
-    font-family: Courier New;
-    font-size: 15px;
-  }
- 
-ul { 
-    display: inline-block; 
-    text-align: left; 
-   
-    
-  }
-  /* M3LO8B Demonstrate relative positioning */
-ol {
-    display: inline-block; 
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    background-color: #DADED4;
+    color: black;
+    font-family: 'Crimson Pro', serif;
     position: relative;
-    
-    
-  }
-
-p::first-letter
-  {
-  font-size: x-large;
-  }
-
-h1::before {
-  content: &#9775;
+    min-height: 100vh;
 }
-/* M3LO9 Demonstrate fixed, (this places the footer at the bottom of the page no matter
-where you scroll to allow you to navigate back to certain pages) */
-/* M4LO4 - This demonstrates the use of gradients. (Changes the color from a cyan to a lighter
-sky blue)*/
-/* M4LO3 Demonstrate the use of rounded corners for borders */
+
+/* Nav styling */
+
+nav {
+    background-color: #F3F3F3;
+    margin: 0 auto;
+    padding: 2em;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+}
+
+nav>ul>li>a:link {
+    text-decoration: none;
+}
+
+nav>ul>li>a:visited {
+    color:#164A41;
+}
+
+nav>ul>li>a:link {
+    color: #9DC88D;
+}
+
+nav>ul {
+    list-style: none;
+}
+
+nav>ul>li {
+    font-size: 1.5em;
+    padding-right: 2em;
+    display: inline;
+    text-shadow: 1px 1px #3F3F3F;
+}
+
+
+
 footer {
-  font-size:20px;
-  padding-left:auto;
-  padding-top:auto;
-  text-align: center;
-  text-decoration-color: #c1c8c7;
-  background: linear-gradient(rgb(15, 119, 216), rgb(108, 171, 173));
-  border:rgb(0, 0, 0);
-  border-style:solid;
-  border-radius:25px;
-  position:fixed;
-  left:425px;
-  bottom: 0;
-  }
-  /* unvisited link */
-a:link {
-  color: red;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    color: white;
+    padding: 1.5em;
+    background-color: #4D774E;
+    text-align: center;
 }
 
-/* visited link */
-a:visited {
-  color: green;
+h1 {
+    color: #3C403D;
 }
 
-/* mouse over link */
-a:hover {
-  color: hotpink;
+
+
+.image-caption {
+    color: white;
 }
 
-/* selected link */
-a:active {
-  color: blue;
+aside {
+    color: #A3BCB6;
 }
-/* */
-/**/
+
+div.main-title h1 {
+    font-size: 4em;
+    text-shadow: 2px 2px #A3BCB6;
+}
+
+.sub-header {
+    font-size: 1em;
+    text-align: center;
+    background-color: #A3BCB6;
+    opacity: 0.9;
+    padding: .25em;
+    border-radius: 25px;
+}
+
+figcaption>p>em>a:link {
+    color: #c7ffd8;
+}
+
+figcaption>p>em>a:visited {
+    color: #ad6c80;
+}
+
+h2:first-of-type {
+    color:  #164A41;
+}
+
+article>p::first-letter {
+    font-size: 2em;
+}
+
+figure.lead-img {
+    width: auto;
+    height: auto;
+    padding-bottom: 5em;
+    padding-top: 2em;
+    
+}
+
+figure.lead-img img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption>p {
+    margin-top: 0;
+}
+
+figure.about-lead-img {
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    
+    
+
+}
+
+.inner-section {
+    height: 100%;
+    width: auto;
+    padding: 1em;
+    background-color: #A3BCB6;
+}
+
+div.main-title {
+    width: 100%;
+    height: auto;
+    margin: 1 auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+ul.current-numbers {
+    list-style: none;
+    text-align: center;
+    padding: 0%;
+    margin-bottom: .5em;
+}
+
+ul.current-numbers li {
+    color: #111d5e;
+    font-size: 2em;
+    padding: .5em 0 .5em 0;
+    border-color: white;
+    border-style: none none solid none;
+}
+
+.numbers>div>em {
+    color: #c70039;
+    font-size: 1em;
+}
+
+.about {
+    background-color: #98ded9;
+    padding: 1em;
+}
+
+.about p {
+    font-size: 1.25em;
+    text-align: center;
+    color: #161d6f;
+}
+
+.info {
+    background-color: #A3BCB6;
+    color: #111d5e;
+    font-family: 'Nunito Sans',
+        sans-serif;
+    border-style: solid;
+    border-color: #4D774E;
+    border-radius: 20px 20px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.info p {
+    text-indent: 1em;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+ol#change-list {
+    text-align: justify;
+    font-size: 1.25em;
+    color: #161d6f;
+}
+
+ol#change-list li {
+    margin: 1em;
+}
+
+article#overview {
+    color: #161d6f;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2em;
+}
+
+article#overview p {
+    background-color: #FFFFFF;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.5;
+    padding: .75em;
+    border-radius: 25px;
+    margin-top: 1em;
+
+}
+
+.img-blurb {
+    color: #111d5e;
+    font-size: 1em;
+    background-color: white;
+    opacity: 0.9;
+    width: 10em;
+    position: relative;
+    bottom: 200px;
+    left: 50px;
+
+}
+
+.contact {
+    background-color: #A3BCB6;
+    width: 12em;
+    height: 4em;
+    font-size: 1.5em;
+    text-align: center;
+    margin: .5em;
+    padding: 1em;
+    float:right;
+    position: absolute;
+    top: 125px;
+    left: 100px;
+    z-index: 10;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+div.numbers {
+    text-align: justify;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 10em;
+}
+
+.rounded {
+    border-color: #39603D;
+    border-style: solid;
+    border-radius: 25px 25px;
+}
+
+
+.Beer-Stats {
+    text-align: center;
+    vertical-align: top;
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Beer-Stats th {
+    padding: .5em;
+}
+
+.Beer-Stats td {
+    border: 1px solid black;
+    padding: .5em;
+    margin: 0;
+}
+
+.Beer-Stats .table-footer {
+    text-align: left;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 414px) {
+
+    .container {
+        width: 100%;
+        padding-top: 10em;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        width: 2em;
+    }
+
+    nav>ul>li {
+        display: block;
+        margin-bottom: .5em;
+        font-size: 1.2em;
+    }
+
+    ul.sub-menu {
+        display: none;
+
+    }
+
+    a.hamburger:hover+ul.sub-menu,
+    ul.sub-menu:hover {
+        display: block;
+    }
+
+    nav>ul>li {
+        font-size: 1em;
+    }
+
+    div.main-title h1 {
+        font-size: 3em;
+        text-shadow: 3px 3px #111d5e;
+    }
+
+    .sub-header {
+        font-size: 1.25em;
+    }
+
+    article>p::first-letter {
+        font-size: 1.25em;
+    }
+
+    ul.current-numbers li {
+        font-size: 1em;
+    }
+
+    .numbers>div>em {
+        font-size: .5em;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
+
+    article#overview p {
+        font-size: .75em;
+    }
+
+    .img-blurb {
+        font-size: .5em;
+        opacity: 0.9;
+        width: 10em;
+        position: relative;
+        bottom: 100px;
+        left: 15px;
+
+    }
+
+    ol#change-list {
+        font-size: 1em;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 812px) {
+
+    .container {
+        width: 90%;
+        margin: auto;
+        padding-top: 5em;
+    }
+
+    nav>ul>li {
+        font-size: 1em;
+    }
+
+    div.main-title h1 {
+        font-size: 3em;
+        text-shadow: 3px 3px #111d5e;
+    }
+
+    .sub-header {
+        font-size: 1em;
+    }
+
+    article>p::first-letter {
+        font-size: 1.25em;
+    }
+
+    ul.current-numbers li {
+        font-size: .75em;
+    }
+
+    .numbers>div>em {
+        font-size: .5em;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
+
+    article#overview p {
+        font-size: .75em;
+    }
+
+    .img-blurb {
+        font-size: .5em;
+        opacity: 0.9;
+        width: 10em;
+        position: relative;
+        bottom: 100px;
+        left: 15px;
+
+    }
+
+    .contact {
+        width: 8em;
+        font-size: 1em;
+        text-align: center;
+        margin: .5em;
+        padding: 1em;
+        float: right;
+        position: fixed;
+        top: 125px;
+        right: 50px;
+        z-index: 10;
+    }
+
+    ol#change-list {
+        font-size: 1em;
+    }
+
+    .info p {
+        text-indent: 1em;
+        text-align: justify;
+        line-height: 1;
+    }
+
+    .contact {
+        display: none;
+    }
+
+}
