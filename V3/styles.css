@@ -1,5 +1,8 @@
 @charset "utf-8";
-
+/*
+Author: Blake Lacroix
+Last Update:03/12/21 
+*/
 
 
 
@@ -21,7 +24,7 @@ body {
     min-height: 100vh;
 }
 
-/* Nav styling */
+
 
 nav {
     background-color: #F3F3F3;
@@ -182,9 +185,20 @@ ul.current-numbers li {
 }
 
 .about p {
-    font-size: 1.25em;
+    font-size: 2em;
     text-align: center;
     color: #161d6f;
+}
+.about-img {
+  width: 50%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  
+ 
+    
+
 }
 
 .info {

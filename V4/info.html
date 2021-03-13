@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!--
+    Author: Blake Lacroix
+    Date: 02/03/21
+    M02: Project V2 - CSS for Layout and Graphic Design 
+
+-->
+
+<!--First Content added-->
+    <meta charset="utf-8">
+    <meta name="keywords" content="Beer, Brew, Grog, Mead, " />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="stylesReset.css">
+    <link rel="stylesheet" href="stylesFlex.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>H.A.B.253 About Page</title>
+
+    </head>
+<body>
+    <section>
+        <nav>
+            <a class="hamburger" href="#">
+                <img src="img/hamburger.svg" alt="hamburger icon">
+            </a>
+    
+            <ul class="sub-menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="info.html">Info</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="contact rounded">
+                <p>
+                    <a target="_blank" href="https://www.northernbrewer.com/">Northern Brewer Supply</a>
+                </p>
+            </div>
+        <div class="flex-row">
+            <div class="main-title">
+                <h1>&#9775 Info &#9775</h1>
+            </div>
+        </div>
+   
+<br /><br /><br /><br />
+    
+    <div style="text-align:center;">  
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jaDQ6S6p6Wk" 
+      frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br />
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/m7EEnAcQ4Dw" 
+      frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br />
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ZYOaZ8g8-ho" 
+      frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="flex-col main">
+        <div class="about rounded">
+            <form id="survey" action="beerSubmit.html" method="GET">
+                <fieldset id="patientInfo">
+                    <legend style="text-align:center;">Beer Selection</legend>
+                    <!-- M7LO5 Demonstrate the use of a text box in a form -->
+                    <div class="about" style="text-align:center;">
+                        <label for="name">Name*</label><br>
+                        <input name="patientName" id="name" type="text" placeholder="First and last name"
+                            required>
+                    </div>
+
+                    <!-- M7LO8 Demonstrate the use of a selection list in a form -->
+                    <div class="about" style="text-align:center;">
+                        <label>What is your favorite Beer?</label><br>
+                        <input name="type-beer-choice" id="type-Beer" type="text" list="Beer" style="text-align:center;">
+                        <datalist id="Beer">
+                            <option value="Pilsner"></option>
+                            <option value="Ale"></option>
+                            <option value="Pale-Ale"></option>
+                            <option value="I.P.A."></option>
+                            <option value="Sour"></option>
+                            <option value="Porter"></option>
+                            <option value="Lager"></option>
+                            <option value="Stout"></option>
+                        </datalist>
+                    </div>
+
+                    <!-- M7LO7 Demonstrate the use of radio buttons in a form -->
+                    <div class="about" style="text-align:center;">
+                        <label>Do you Brew Yourself?</label><br>
+                        <label>Yes</label>
+                        <input name="homebrew" id="fYes" value="yes" type="radio">
+                        <label>No</label>
+                        <input name="homeBrew" id="fNo" value="no" type="radio">
+                    </div>
+                </fieldset>
+
+                <!-- M7LO10 Demonstrate the use of a submit button in a form -->
+                <div id="buttons" style="text-align:center;" >
+                    <input type="submit" value="submit">
+                    <input type="reset" value="Cancel">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+    <footer>
+        Brewing in the 253 - Blake Lacroix- CIS 155 <br>
+    </footer>
+</body>
+<!---->

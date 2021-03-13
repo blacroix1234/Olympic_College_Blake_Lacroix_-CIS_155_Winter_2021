@@ -1,9 +1,12 @@
 @charset "utf-8";
+/*
+Author: Blake Lacroix
+Last Update:03/12/21 
+*/
 
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro');
 
 * {
@@ -21,7 +24,7 @@ body {
     min-height: 100vh;
 }
 
-/* Nav styling */
+
 
 nav {
     background-color: #F3F3F3;
@@ -30,6 +33,7 @@ nav {
     width: 100%;
     position: fixed;
     z-index: 20;
+    
 }
 
 nav>ul>li>a:link {
@@ -66,6 +70,7 @@ footer {
     padding: 1.5em;
     background-color: #4D774E;
     text-align: center;
+    text-size-adjust: auto;
 }
 
 h1 {
@@ -88,7 +93,7 @@ div.main-title h1 {
 }
 
 .sub-header {
-    font-size: 1em;
+    font-size: 3em;
     text-align: center;
     background-color: #A3BCB6;
     opacity: 0.9;
@@ -139,6 +144,18 @@ figure.about-lead-img {
     
 
 }
+datalist {
+    position: absolute;
+    background-color: lightgrey;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+  }
+  option {
+    background-color: #bbb;
+    padding: 4px;
+    margin-bottom: 1px;
+    cursor: pointer;
+  }
 
 .inner-section {
     height: 100%;
@@ -156,14 +173,14 @@ div.main-title {
     text-align: center;
 }
 
-ul.current-numbers {
+ul.detailed-ingredients {
     list-style: none;
     text-align: center;
     padding: 0%;
     margin-bottom: .5em;
 }
 
-ul.current-numbers li {
+ul.detailed-ingredients li {
     color: #111d5e;
     font-size: 2em;
     padding: .5em 0 .5em 0;
@@ -177,15 +194,27 @@ ul.current-numbers li {
 }
 
 .about {
-    background-color: #98ded9;
-    padding: 1em;
+    background-color: #A3BCB6;
+    padding: .5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .5em;
+    
 }
 
 .about p {
-    font-size: 1.25em;
+    font-size: 2em;
     text-align: center;
     color: #161d6f;
 }
+.about-img {
+  width: 40%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  }
+
 
 .info {
     background-color: #A3BCB6;
@@ -283,10 +312,11 @@ div.numbers {
 
 
 .Beer-Stats {
+    -webkit-text-size-adjust: auto;
     text-align: center;
     vertical-align: top;
     border-collapse: collapse;
-    border: 1px solid black;
+    border: 2px solid black;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
